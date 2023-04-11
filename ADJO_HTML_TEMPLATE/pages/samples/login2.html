@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/skydash/pages/samples/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Mar 2023 06:37:59 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>::ADJO::</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../vendors/feather/feather.css">
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <!--<link rel="shortcut icon" href="../../images/favicon.png" />-->
+    <style>
+
+        .oblique {
+            transform: skewX(-10deg);
+            overflow: hidden;
+            width: 100%;
+            right: -10rem;
+            border-bottom-left-radius: 35rem;
+        }
+
+        .bg-cover {
+            background-size: cover;
+        }
+
+        .position-absolute {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .text-gradient.text-info {
+            background-image: linear-gradient(310deg,#2152ff,#21d4fd) !important;
+        }
+
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bg-gradient-info {
+            color: #fff;
+            background-image: linear-gradient(310deg,#2152ff,#21d4fd);
+        }
+
+            .bg-gradient-info:hover {
+                background-image: linear-gradient(310deg,#21d4fd,#2152ff);
+                border-color: #17c1e8 !important;
+                color: #fff !important;
+            }
+
+        .btn {
+            margin-bottom: 1rem;
+            letter-spacing: -.025rem;
+            box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.07);
+            background-size: 150%;
+            background-position-x: 25%;
+        }
+
+        .btn {
+            --bs-btn-padding-x: 1.5rem;
+            --bs-btn-padding-y: 0.75rem;
+            --bs-btn-font-size: 0.75rem;
+            --bs-btn-font-weight: 700;
+            --bs-btn-line-height: 1.4;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: transparent;
+            --bs-btn-border-width: 1px;
+            --bs-btn-border-color: transparent;
+            --bs-btn-border-radius: 0.5rem;
+            --bs-btn-hover-border-color: transparent;
+            --bs-btn-box-shadow: 0 4px 7px -1px rgba(0,0,0,.11),0 2px 4px -1px rgba(0,0,0,.07);
+            --bs-btn-disabled-opacity: 0.65;
+            --bs-btn-focus-box-shadow: 0 0 0 0.2rem rgba(var(--bs-btn-focus-shadow-rgb),.5);
+            display: inline-block;
+            padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+            font-family: var(--bs-btn-font-family);
+            font-size: var(--bs-btn-font-size);
+            font-weight: var(--bs-btn-font-weight);
+            line-height: var(--bs-btn-line-height);
+            color: var(--bs-btn-color);
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+            border-radius: var(--bs-btn-border-radius);
+            background-color: var(--bs-btn-bg);
+            transition: all .15s ease-in;
+        }
+
+        .badge, .btn {
+            text-transform: uppercase;
+        }
+
+        .brand-logo {
+            margin-bottom: 1rem;
+        }
+
+            .brand-logo img {
+                width: 250px;
+            }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        .marginrt {
+           margin-right:0 !important;
+        }
+
+        body, html {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-content  mt-0 vh-100">
+        <section>
+
+            <div class="page-header vh-100">
+                <div class="">
+                    <div class="row vh-100">
+                        <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto marginrt">
+                            <div class="mb-lg-5"></div>
+
+
+                            <div class="card card-plain mt-8 ">
+                                <div class="brand-logo">
+                                    <img src="../../images/ADJO_Logo.png" alt="logo">
+                                </div>
+                                <div class="card-header pb-0 text-left bg-transparent">
+                                    <h3 class="font-weight-bolder text-info text-gradient">Welcome back</h3>
+                                    <p class="mb-0">Enter your User Name and Password to sign in</p>
+                                </div>
+                                <div class="card-body">
+                                    <form role="form">
+                                        <label>User Name</label>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="User Name" aria-label="Username" aria-describedby="email-addon">
+                                        </div>
+                                        <label>Password</label>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon">
+                                        </div>
+                                        <!--<div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="rememberMe" checked="">
+                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                                        </div>-->
+                                        <div class="text-center">
+                                            <!--<button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0">Sign in</button>-->
+                                            <a href="../Master.html" class="btn bg-gradient-info w-100 mt-4 mb-0">Sign in</a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="">
+                                    <div class=" mx-auto text-center mt-1">
+                                        <p class="mb-0 text-secondary">
+                                            Copyright ©
+                                            <script>
+                                                document.write(new Date().getFullYear())
+                                            </script> ADJO.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
+                                <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('../../images/curved6.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+
+        </section>
+    </main>
+
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/template.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/todolist.js"></script>
+    <!-- endinject -->
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/skydash/pages/samples/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Mar 2023 06:37:59 GMT -->
+</html>
