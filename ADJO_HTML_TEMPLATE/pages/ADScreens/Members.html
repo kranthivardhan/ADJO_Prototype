@@ -136,29 +136,205 @@
                     <div class="row">
                         <div class="col-md-12 grid-margin">
                             <div class="row">
-                                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                                    <h3 class="font-weight-bold">Welcome Administrator</h3>
-                                    <h6 class="font-weight-normal mb-0">You can Access all the Screens!!!</h6>
-                                </div>
-                                <!--<div class="col-12 col-xl-4">
-                                    <div class="justify-content-end d-flex">
-                                        <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                                            <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                                                <a class="dropdown-item" href="#">January - March</a>
-                                                <a class="dropdown-item" href="#">March - June</a>
-                                                <a class="dropdown-item" href="#">June - August</a>
-                                                <a class="dropdown-item" href="#">August - November</a>
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-description">
+                                                <button type="button" class="btn btn-primary btn-rounded btn-fw" data-toggle="modal" data-target="#mdlAddMembers"><i class="feather-plus-circle"></i> Add Members</button>
+                                                <button type="button" class="btn btn-success btn-rounded btn-fw" data-toggle="modal" data-target="#mdlImportexcel"><i class="feather-upload"></i> Import from Excel </button>
+                                            </p>
+                                            <h4 class="card-title">Members List</h4>
+
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-sm btn-primary" type="button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive table-hover">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Slno.</th>
+                                                            <th>Client Name</th>
+                                                            <th>Member Name</th>
+                                                            <th>Mobile</th>
+                                                            <th>Status</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>TRNT</td>
+                                                            <td>Trinity Church</td>
+                                                            <td>+91-9638527410</td>
+                                                            <td>Active</td>
+                                                            <td>
+                                                                <a class="text-dark"><i class="feather-edit"></i></a>
+                                                                &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>53275532</td>
+                                                            <td>15 May 2017</td>
+                                                            <td>12 May 2017</td>
+                                                            <td>Active</td>
+                                                            <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>53275533</td>
+                                                            <td>14 May 2017</td>
+                                                            <td>12 May 2017</td>
+                                                            <td>Active</td>
+                                                            <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>53275534</td>
+                                                            <td>16 May 2017</td>
+                                                            <td>12 May 2017</td>
+                                                            <td>Active</td>
+                                                            <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>53275535</td>
+                                                            <td>20 May 2017</td>
+                                                            <td>12 May 2017</td>
+                                                            <td>Active</td>
+                                                            <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
-                                </div>-->
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade mx-10" id="mdlAddMembers" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Add Members</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="">
+
+                                            <form class="forms-sample">
+                                                <div class="form-group row">
+                                                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Client</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control" id="exampleSelectGender">
+                                                            <option>[TRNT] TRINITY CHURCH</option>
+                                                            <option>[TOG] TEMPLE OF GOD</option>
+                                                            <option>[KNG] KINGS TEMPLE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Member Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="exampleInputMobile" placeholder="Mobile number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">DOB</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="exampleInputMobile" placeholder="Date of Birth">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="exampleInputPassword2" class="col-sm-3 col-form-label" style="line-height:3.8rem;">Address</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" id="txtAddress" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Status</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control" id="exampleSelectGender">
+                                                            <option>Active</option>
+                                                            <option>In-Active</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-rounded btn-success btn-sm">Save</button>
+                                <button type="button" class="btn btn-rounded btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade mx-10" id="mdlImportexcel" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Import from Excel</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="">
+                                            <form class="forms-sample">
+                                                <div class="form-group row">
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
+                                                        <span class="input-group-append">
+                                                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-rounded btn-success btn-sm">Save</button>
+                                <button type="button" class="btn btn-rounded btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
                 <footer class="footer">
