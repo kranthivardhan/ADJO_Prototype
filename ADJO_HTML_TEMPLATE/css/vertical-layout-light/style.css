@@ -11315,7 +11315,6 @@ pre {
     width: 100%;
     height: 2.875rem;
     padding: 0.875rem 1.375rem;
-   
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1;
@@ -21266,6 +21265,7 @@ code {
     .stretch-card > .card {
         width: 100%;
         min-width: 100%;
+        margin-top: 10px;
     }
 
 @media (min-width: 576px) {
@@ -25297,7 +25297,8 @@ dl {
 
     .modal .modal-dialog .modal-content .modal-header {
         /*padding: 25px 26px;*/
-        background-color: #60b7d5; // #b9e1ef;
+        background-color: #60b7d5;
+        // #b9e1ef;
     }
 
         .modal .modal-dialog .modal-content .modal-header .close span {
@@ -30116,8 +30117,6 @@ div.tagsinput {
     line-height: 1;
     vertical-align: middle;
     position: relative;
-
-
 }
 
 .sidebar .nav .nav-item .nav-link .badge {
@@ -30175,7 +30174,6 @@ div.tagsinput {
         .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link, .sidebar .nav:not(.sub-menu) > .nav-item:hover[aria-expanded="true"] {
             background: #19c0ff;
             color: #fff;
-           
         }
 
 .nav-item:hover i.menu-icon {
@@ -30187,31 +30185,38 @@ div.tagsinput {
 }
 /*.nav-item:hover span {
     /*position: relative;*/
-    /*animation: MoveText 0.5s;
+/*animation: MoveText 0.5s;
     transform: translateX(30px);
     transition: transform 1s linear;*/
-}*/
+}
+
+*/
 
 @keyframes MoveText {
-    from {
-        transform: translateX(0px);
-    }
+    from
 
-    to {
-        transform: translateX(30px);
-    }
+{
+    transform: translateX(0px);
 }
+
+to {
+    transform: translateX(30px);
+}
+
+}
+
 @keyframes rotDegrees {
     from {
         left: 0px;
-        transform: rotate(0deg) ;
+        transform: rotate(0deg);
     }
 
     to {
         left: 30px;
-        transform: rotate(359deg) ;
+        transform: rotate(359deg);
     }
 }
+
 @keyframes shake {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
@@ -32286,3 +32291,21 @@ div.tagsinput {
 }
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
+
+.icon24 {
+    width: 24px;
+    height: 24px;
+    /*position: absolute;*/
+}
+
+.file-extract {
+    
+    /*background-color: white;*/
+    mask: url(../../images/icons/extract.svg) no-repeat center;
+    -webkit-mask: url(../../images/icons/extract.svg) no-repeat center;
+}
+.file-extract2 {
+    /*background-color: white;*/
+    mask: url(../../images/icons/zip.png) no-repeat center;
+    -webkit-mask: url(../../images/icons/zip.png) no-repeat center;
+}
