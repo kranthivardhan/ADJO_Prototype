@@ -88,6 +88,9 @@
     <Content Include="images\faces\face6.jpg" />
     <Content Include="images\faces\face7.jpg" />
     <Content Include="images\favicon.png" />
+    <Content Include="images\icons\extract.svg" />
+    <Content Include="images\icons\uploadzip.svg" />
+    <Content Include="images\icons\zip.png" />
     <Content Include="images\logo-mini.svg" />
     <Content Include="images\logo.svg" />
     <Content Include="images\sprites\jsgrid-icons.png" />
