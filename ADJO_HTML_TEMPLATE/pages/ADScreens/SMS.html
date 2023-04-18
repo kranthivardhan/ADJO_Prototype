@@ -49,7 +49,7 @@
                                 <i class="ti-settings text-primary"></i>
                                 Settings
                             </a>
-                            <a class="dropdown-item" href="samples/login2.html">
+                            <a class="dropdown-item" href="../samples/login2.html">
                                 <i class="ti-power-off text-primary"></i>
                                 Logout
                             </a>
@@ -70,7 +70,7 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="../Master.html">
                             <i class="feather-grid menu-icon"></i>
                             <span class="menu-title">Dashboard</span>
                         </a>
@@ -96,7 +96,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Templates.html">
                             <i class="feather-flag menu-icon"></i>
-                            <span class="menu-title">Templates & Cards</span>
+                            <span class="menu-title">Templates</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cards.html">
+                            <i class="feather-gift menu-icon"></i>
+                            <span class="menu-title">Cards</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -113,19 +119,19 @@
                     </li>
 
                     <!--<li class="nav-item">
-                      <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                        <i class="icon-layout menu-icon"></i>
-                        <span class="menu-title">UI Elements</span>
-                        <i class="menu-arrow"></i>
-                      </a>
-                      <div class="collapse" id="ui-basic">
-                        <ul class="nav flex-column sub-menu">
-                          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-                        </ul>
-                      </div>
-                    </li>-->
+      <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+        <i class="icon-layout menu-icon"></i>
+        <span class="menu-title">UI Elements</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-basic">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+        </ul>
+      </div>
+    </li>-->
 
 
                 </ul>
@@ -136,25 +142,94 @@
                     <div class="row">
                         <div class="col-md-12 grid-margin">
                             <div class="row">
-                                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                                    <h3 class="font-weight-bold">Welcome Administrator</h3>
-                                    <h6 class="font-weight-normal mb-0">You can Access all the Screens!!!</h6>
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Send Message</h4>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-7">
+                                                    <select class="form-control" id="exampleSelectGender">
+                                                        <option>--Select Template--</option>
+                                                        <option>TRNT Church</option>
+                                                        <option>GOD CHURCH</option>
+                                                    </select>
+                                                </div>
+
+                                                <button type="button" class="btn btn-primary btn-rounded btn-fw" data-toggle="modal" data-target="#mdlAddMembers"><i class="feather-navigation"></i> Send Messages</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <!--<div class="col-12 col-xl-4">
-                                    <div class="justify-content-end d-flex">
-                                        <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                                            <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                                                <a class="dropdown-item" href="#">January - March</a>
-                                                <a class="dropdown-item" href="#">March - June</a>
-                                                <a class="dropdown-item" href="#">June - August</a>
-                                                <a class="dropdown-item" href="#">August - November</a>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+
+
+
+                                            <div class="form-group">
+                                                <h5 class="mdi-card-text">List of All TRNT Church</h5>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-sm btn-primary" type="button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive table-hover">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Slno.</th>
+                                                            <th>Name</th>
+                                                            <th>Mobile</th>
+                                                            <th>Status</th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Ashok</td>
+                                                            <td>+91-9638527410</td>
+                                                            <td>Sent</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Babu</td>
+                                                            <td>+91-7894561230</td>
+                                                            <td>Sent</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>David</td>
+                                                            <td>+91-7788994455</td>
+                                                            <td>ReSend</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Santhosh</td>
+                                                            <td>+91-6985231474</td>
+                                                            <td>Sent</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>Kumar</td>
+                                                            <td>+91-9516238470</td>
+                                                            <td class="success">Sent</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
-                                </div>-->
+                                </div>
+
                             </div>
                         </div>
                     </div>

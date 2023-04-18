@@ -115,6 +115,7 @@
     <Content Include="pages\ADScreens\Client.html" />
     <Content Include="pages\ADScreens\Members.html" />
     <Content Include="pages\ADScreens\Reports.html" />
+    <Content Include="pages\ADScreens\Cards.html" />
     <Content Include="pages\ADScreens\SMS.html" />
     <Content Include="pages\ADScreens\Templates.html" />
     <Content Include="pages\ADScreens\UploadPPs.html" />

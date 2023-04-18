@@ -96,7 +96,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Templates.html">
                             <i class="feather-flag menu-icon"></i>
-                            <span class="menu-title">Templates & Cards</span>
+                            <span class="menu-title">Templates</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cards.html">
+                            <i class="feather-gift menu-icon"></i>
+                            <span class="menu-title">Cards</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -111,6 +117,23 @@
                             <span class="menu-title">Reports</span>
                         </a>
                     </li>
+
+                    <!--<li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                        <i class="icon-layout menu-icon"></i>
+                        <span class="menu-title">UI Elements</span>
+                        <i class="menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                        </ul>
+                      </div>
+                    </li>-->
+
+
                 </ul>
             </nav>
             <!-- partial -->
@@ -118,39 +141,63 @@
                 <div class="content-wrapper">
                     <div class="row">
                         <div class="col-md-12 grid-margin">
+
                             <div class="row">
-
-
-
-
                                 <div class="col-lg-12 grid-margin stretch-card">
                                     <div class="card">
                                         <div class="card-body">
-                                            <p class="card-description">
-                                                <button type="button" class="btn btn-primary btn-rounded btn-fw" data-toggle="modal" data-target="#exampleModalCenter">+ Create Clients</button>
-                                            </p>
-                                            <h4 class="card-title">Clients List</h4>
+                                            <h4 class="card-title">Create Cards</h4>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-7">
+                                                    <select class="form-control" id="exampleSelectGender">
+                                                        <option>--Select Template--</option>
+                                                        <option>TRNT Church</option>
+                                                        <option>GOD CHURCH</option>
+                                                    </select>
+                                                </div>
+
+                                                <button type="button" class="btn btn-primary btn-rounded btn-fw" data-toggle="modal" data-target="#mdlAddMembers"><i class="feather-plus-circle"></i> Create Cards</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
 
 
+
+                                            <div class="form-group">
+                                                <h5 class="mdi-card-text">Cards-List</h5>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-sm btn-primary" type="button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="table-responsive table-hover">
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
                                                             <th>Slno.</th>
-                                                            <th>Client Code</th>
-                                                            <th>Client Name</th>
+                                                            <th>Member Name</th>
                                                             <th>Mobile</th>
-                                                            <th>Status</th>
+                                                            <th>Card</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
-                                                            <td>TRNT</td>
-                                                            <td>Trinity Church</td>
+                                                            <td>Ashok</td>
                                                             <td>+91-9638527410</td>
-                                                            <td>Active</td>
+                                                            <td><img src="../../images/faces/face1.jpg"></td>
                                                             <td>
                                                                 <a class="text-dark"><i class="feather-edit"></i></a>
                                                                 &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a>
@@ -158,34 +205,30 @@
                                                         </tr>
                                                         <tr>
                                                             <td>2</td>
-                                                            <td>53275532</td>
-                                                            <td>15 May 2017</td>
-                                                            <td>12 May 2017</td>
-                                                            <td>Active</td>
+                                                            <td>David</td>
+                                                            <td>+91-9638527410</td>
+                                                            <td><img src="../../images/faces/face1.jpg"></td>
                                                             <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
                                                         </tr>
                                                         <tr>
                                                             <td>3</td>
-                                                            <td>53275533</td>
-                                                            <td>14 May 2017</td>
-                                                            <td>12 May 2017</td>
-                                                            <td>Active</td>
+                                                            <td>Santhosh</td>
+                                                            <td>+91-9638527410</td>
+                                                            <td><img src="../../images/faces/face1.jpg"></td>
                                                             <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
                                                         </tr>
                                                         <tr>
                                                             <td>4</td>
-                                                            <td>53275534</td>
-                                                            <td>16 May 2017</td>
-                                                            <td>12 May 2017</td>
-                                                            <td>Active</td>
+                                                            <td>Babu</td>
+                                                            <td>+91-9638527410</td>
+                                                            <td><img src="../../images/faces/face1.jpg"></td>
                                                             <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
                                                         </tr>
                                                         <tr>
                                                             <td>5</td>
-                                                            <td>53275535</td>
-                                                            <td>20 May 2017</td>
-                                                            <td>12 May 2017</td>
-                                                            <td>Active</td>
+                                                            <td>Kumar</td>
+                                                            <td>+91-9638527410</td>
+                                                            <td><img src="../../images/faces/face1.jpg"></td>
                                                             <td><a class="text-dark"><i class="feather-edit"></i></a> &nbsp; <a class="text-danger"><i class="feather-trash-2"></i></a></td>
                                                         </tr>
                                                     </tbody>
@@ -196,110 +239,44 @@
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade mx-10" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered " >
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Create Clients</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="grid-margin stretch-card">
-                                    <div class="card">
-                                        <div class="">
-                                          
-                                            <form class="forms-sample">
-                                                <div class="form-group row">
-                                                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Client Code</label>
-                                                    <div class="col-sm-5">
-                                                        <input type="text" class="form-control mdi-36px" id="exampleInputUsername2" placeholder="Client Code">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Client Name</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Client Name">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="exampleInputMobile" placeholder="Mobile number">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="exampleInputPassword2" class="col-sm-3 col-form-label" style="line-height:3.8rem;">Address</label>
-                                                    <div class="col-sm-9">
-                                                        <textarea class="form-control" id="txtAddress" rows="4"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Status</label>
-                                                    <div class="col-sm-9">
-                                                        <select class="form-control" id="exampleSelectGender">
-                                                            <option>Active</option>
-                                                            <option>In-Active</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-
-                                <button type="button" class="btn btn-rounded btn-success btn-sm">Save</button>
-                                <button type="button" class="btn btn-rounded btn-danger btn-sm" data-dismiss="modal">Cancel</button>
-                            </div>
+                    <!-- content-wrapper ends -->
+                    <!-- partial:partials/_footer.html -->
+                    <footer class="footer">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  ADJO.com. All rights reserved.</span>
                         </div>
-                    </div>
+                    </footer>
+                    <!-- partial -->
                 </div>
-
-
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  ADJO.com. All rights reserved.</span>
-                    </div>
-                </footer>
-                <!-- partial -->
+                <!-- main-panel ends -->
             </div>
-            <!-- main-panel ends -->
+            <!-- page-body-wrapper ends -->
         </div>
-        <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="../../vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="../../vendors/chart.js/Chart.min.js"></script>
-    <!--<script src="../vendors/datatables.net/jquery.dataTables.js"></script>-->
-    <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-    <script src="../../js/dataTables.select.min.js"></script>
+        <!-- container-scroller -->
+        <!-- plugins:js -->
+        <script src="../../vendors/js/vendor.bundle.base.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="../../vendors/chart.js/Chart.min.js"></script>
+        <!--<script src="../vendors/datatables.net/jquery.dataTables.js"></script>-->
+        <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+        <script src="../../js/dataTables.select.min.js"></script>
 
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="../../js/off-canvas.js"></script>
-    <script src="../../js/hoverable-collapse.js"></script>
-    <script src="../../js/template.js"></script>
-    <script src="../../js/settings.js"></script>
-    <script src="../../js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page-->
-    <script src="../../js/dashboard.js"></script>
-    <script src="../../js/Chart.roundedBarCharts.js"></script>
-    <!-- End custom js for this page-->
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="../../js/off-canvas.js"></script>
+        <script src="../../js/hoverable-collapse.js"></script>
+        <script src="../../js/template.js"></script>
+        <script src="../../js/settings.js"></script>
+        <script src="../../js/todolist.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page-->
+        <script src="../../js/dashboard.js"></script>
+        <script src="../../js/Chart.roundedBarCharts.js"></script>
+        <!-- End custom js for this page-->
 </body>
 
 
